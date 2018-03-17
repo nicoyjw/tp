@@ -1,0 +1,14 @@
+{
+    "name": "nick/bibox-api",
+    "description": "This is a bibox.com api.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick.wu",
+            "email": "nick.wu@patpat.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
