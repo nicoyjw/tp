@@ -27,25 +27,10 @@ class BiboxClient
         ob_start ();
         curl_exec ( $ch );
         $result = ob_get_contents ();
-        ob_end_clean ();    
+        ob_end_clean ();
         curl_close ( $ch );
         return json_decode($result,true);
 
-
-        //发送post请求
-
-        /*$ch = curl_init ();
-        curl_setopt($ch, CURLOPT_HTTPHEADER, Array("Authorization: ".$this->self_token_type.' '.$this->self_access_token));
-        curl_setopt ( $ch, CURLOPT_POST, count ( $p ) );
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt ( $ch, CURLOPT_URL, $url );
-        curl_setopt ( $ch, CURLOPT_POSTFIELDS, http_build_query ( $p ));
-        ob_start ();
-        curl_exec ( $ch );
-        $result = ob_get_contents ();
-        ob_end_clean ();
-        curl_close ( $ch );
-        return json_decode($result,true);*/
     }
 
 }

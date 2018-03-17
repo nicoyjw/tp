@@ -3,6 +3,8 @@
 return [
 
     //DingDing access token
-    'access_token' =>  env('DINGDING_TOKEN', ''),
+    'api_key' =>  env('API_KEY', ''),
+
+    'secret' =>  env('SECRET', ''),
 
 ];
